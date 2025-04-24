@@ -48,13 +48,19 @@ img {
 
         span {
             font-weight: 700;
-            font-size: 17px;
+            font-size: 12px;
         }
 
         h2 {
             font-family: "Arvo", serif;
             font-weight: 400;
             font-size: 22px;
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 14px;
+            color: #A7ACB5;
         }
     }
 }
@@ -69,9 +75,10 @@ img {
     grid-area: iphone-image;
 
     .one-img {
-        padding-top: 30px;
-        /* padding-right: 20px; */
-        width: 80%;
+        position: relative;
+        top: 5px;
+        padding-top: 50px;
+        width: 60%;
         margin: auto;
     }
 
@@ -104,6 +111,8 @@ img {
         font-family: "Arvo", serif;
         font-weight: 400;
         font-size: 48px;
+        color: #333333;
+        margin: 20px;
     }
 
     a {
@@ -130,7 +139,7 @@ img {
     }
 
     .two-img {
-        width: 100%;
+        width: 80%;
         margin: auto;
     }
 
@@ -160,34 +169,44 @@ img {
     justify-items: center;
     align-items: center;
     align-content: center;
-    text-align: center;
-    align-items: flex-end;
     background-color: #FEF5F5;
     grid-area: mac-image;
 
     .inner {
-        margin: 0;
         padding-top: 60px;
         padding-right: 30px;
         padding-left: 30px;
-    }
-
-    h2 {
-        font-family: "Arvo", serif;
-        font-weight: 400;
-        font-size: 22px;
-    }
-
-    .three-img {
         position: relative;
-        justify-content: center;
-        width: 70%;
-        left: 15%;
+        bottom: 40px;
+
+        span {
+            margin: 0 30px;
+            font-weight: 700;
+            font-size: 12px;
+        }
+
+        h2 {
+            margin: 10px 30px;
+            font-family: "Arvo", serif;
+            font-weight: 400;
+            font-size: 22px;
+            
+        }
+
+        .three-img {
+            position: relative;
+            top: 60px;
+            justify-content: center;
+            width: 60%;
+            left: 15%;
+        }
+
+        .three-img img {
+            width: 100%;
+        }
     }
 
-    .three-img img {
-        width: 100%;
-    }
+
 }
 
 .mac-content {
@@ -201,7 +220,7 @@ img {
     grid-area: mac-content;
 
     .inner {
-        width: 100%;
+        width: 80%;
         padding: 0 20px;
 
         p {
@@ -227,19 +246,16 @@ img {
     align-items: center;
     align-content: center;
     text-align: center;
-    background-color: #9979B9;
+    background-color: #8F76BC;
     grid-area: floppy-content;
 
     .inner {
-
-        /* width: 85%;
-        margin: auto; */
         .circle {
             border-radius: 50%;
             background-color: #8166B0;
-            padding: 40px 5px;
-            margin-bottom: 100px;
-            margin-top: 40px;
+            padding: 30px 5px;
+            margin-bottom: 40px;
+            margin-top: 80px;
 
             .flag {
                 margin: auto;
@@ -250,12 +266,17 @@ img {
                 width: fit-content;
                 align-items: center;
                 padding: 5px 20px;
+
+                span {
+                    font-weight: 700;
+                    font-size: 10px;
+                }
             }
 
             .four-img {
-                width: 65%;
+                width: 60%;
                 margin: auto;
-                padding: 20px 0;
+                padding: 20px 10px;
             }
 
             .four-img img {
@@ -263,6 +284,8 @@ img {
             }
 
             span {
+                font-weight: 700;
+                font-size: 12px;
                 color: white;
                 text-transform: uppercase;
             }
@@ -285,8 +308,8 @@ img {
             }
 
             button {
-                font-weight: 400;
-                font-size: 14px;
+                font-weight: 700;
+                font-size: 12px;
                 color: black;
                 background-color: #FFC80A;
                 border-radius: 40px;
@@ -341,7 +364,6 @@ img {
 
 .ipad-content {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     justify-items: center;
     align-items: center;
@@ -356,10 +378,10 @@ img {
                 font-weight: 700;
                 font-size: 8px;
                 position: absolute;
-                top: 15px;
+                top: 17px;
                 left: 20px;
-                padding: 2px 5px;
-                border-radius: 10px;
+                padding: 5px 13px;
+                border-radius: 7px;
                 background-color: #FA684F;
                 color: white;
                 text-transform: uppercase;
@@ -370,6 +392,8 @@ img {
             text-align: center;
 
             h2 {
+                position: relative;
+                top: 20px;
                 font-family: "Arvo", serif;
                 font-weight: 700;
                 font-size: 22px;
@@ -377,8 +401,11 @@ img {
             }
 
             .five-img {
+                position: relative;
+                top: 43.5px;
                 width: 70%;
                 margin: auto;
+                z-index: 1;
             }
 
             .five-img img {
@@ -386,6 +413,29 @@ img {
             }
         }
     }
+
+    .inner::before {
+        content: "UX";
+        position: absolute;
+        /* top: 70%;
+        left: 120px; */
+        /* top: 70%;
+        left: 120px; */
+        top: 75%;
+        left: 52%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        /* width: 20%; */
+        text-align: center;
+        transform: translate(-50%, -50%);
+        font-weight: 700;
+        font-size: 430px;
+        font-family: "Arvo", serif;
+        color: #8BAAAB;
+        overflow: hidden;
+        z-index: 0;
+    }
+
 }
 
 .twitter-content {
@@ -399,6 +449,7 @@ img {
     background-color: #38D5F4;
     grid-area: twitter-content;
     overflow: hidden;
+
     .inner {
         width: 80%;
         margin: auto;
@@ -406,10 +457,10 @@ img {
         .circle {
             border-radius: 50%;
             background-color: #35CFED;
-            padding: 50px 20px;
+            padding: 60px 20px;
 
             .seven-img {
-                width: 50%;
+                width: 20%;
                 margin: auto;
             }
 
@@ -437,6 +488,7 @@ img {
     text-align: center;
     background-color: #F7EFF0;
     grid-area: Exp-content;
+    z-index: 2;
 
     .inner {
         width: 90%;
@@ -468,10 +520,13 @@ img {
     text-align: center;
     background-color: #2C2C2C;
     grid-area: tv-image;
+    z-index: 3;
 
     .inner {
         .eight-img {
-            width: 70%;
+            position: relative;
+            top: 30px;
+            width: 60%;
             margin: auto;
         }
 
