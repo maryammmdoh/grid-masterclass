@@ -2,7 +2,7 @@
 A sleek HTML + CSS project showing off a multi-section layout using **CSS Grid**. Inspired by Apple-style design, this site highlights modern products with a clean, minimal UI.
 
 ## 🚀 Live Demo
-> *(Add GitHub Pages link here if deployed)*
+> *https://maryammmdoh.github.io/grid-masterclass/*
 
 ## 🌐 What's Inside?
 - 📱 HTML5 layout with multiple content cards
