@@ -13,8 +13,12 @@ body {
 
     display: grid;
 
-    grid-template-columns: repeat(4, 25%);
+    /* grid-template-columns: repeat(4, 25%); */
     /* grid-template-rows: repeat(3, 25%) 15%; */
+
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-auto-flow: row;
 
     grid-template-areas:
         "iphone-content iphone-image Labs-content Labs-content"
@@ -190,7 +194,7 @@ img {
             font-family: "Arvo", serif;
             font-weight: 400;
             font-size: 22px;
-            
+
         }
 
         .three-img {
@@ -557,4 +561,23 @@ img {
             color: white;
         }
     }
+}
+
+
+@media screen and (max-width:990px) {
+    .contanir {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "Labs-content Labs-content Labs-content Labs-content"
+            "iphone-content iphone-content iphone-image iphone-image"
+            "keyboard-content keyboard-content Controller-content Controller-content"
+            "mac-image mac-image mac-content mac-content"
+            "twitter-content twitter-content floppy-content floppy-content"
+            "ipad-content ipad-content floppy-content floppy-content"
+            "Exp-content Exp-content Exp-content Exp-content"
+            "tv-image tv-image tv-content tv-content";
+    }
+
 }
